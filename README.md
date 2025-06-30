@@ -1,46 +1,5 @@
+# Vue 3 + TypeScript + Vite
 
-# Trabajo Práctico N° 4: Ciclo de vida de un componente
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-En este trabajo vamos a repasar los temas vistos en la clase sobre el ciclo de vida de un componente.  
-Debemos crear un componente llamado `Alertas`.
-
-## Componente Lista
-Crear un componente llamado `Lista` que renderice una lista de elementos (provista en la carpeta `resources`).  
-La lista debe cargarse dentro del hook `onMounted`. Para simular una demora en la carga, podemos utilizar el método `setTimeout`, que permite ejecutar una función luego de un tiempo determinado (en milisegundos).
-
-```javascript
-setTimeout(() => {
-  // acción a ejecutar luego de 3 segundos
-}, 3000);
-```
-
-Esta función ejecutará una acción **después de 3 segundos**.
-
----
-
-## Componente Tareas
-Crear un componente llamado `Tareas`, el cual debe contener una lista de tareas a las que podamos **agregar nuevas**.  
-En este componente deben utilizarse los hooks `onBeforeUpdate` y `onUpdated`, mostrando en consola los siguientes mensajes:
-- En `onBeforeUpdate`: **"Lista aún no modificada"**
-- En `onUpdated`: **"Lista modificada"**
-
-Además, se debe **pintar de algun color a elección** los ítems que existían **antes** de la modificación.
-
----
-
-## Componente DimensionComponente
-Crear un componente llamado `DimensionComponente`, que mostrará un título con las dimensiones del componente.  
-Para esto debemos **escuchar eventos**, los cuales deben agregarse en el hook `onMounted` y removerse en el hook `onUnmounted`.
-
-> En este caso, escucharemos el evento `resize` del elemento `window`.
-Recuerden que cuando escuchamos podemos pasar una función al evento 
-
----
-
-## Integración de los componentes
-Para mostrar estos tres componentes ( `Lista`, `Tareas`, `DimensionComponente`) deben llamarse **dinámicamente**, como lo aprendimos en clase.  
-La forma de selección es libre: pueden usar **tags**, **botones**, **select**, etc.
-
----
-
-
+Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
