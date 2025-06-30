@@ -1,4 +1,4 @@
-const profesiones = [
+export const profesiones = [
   {
     id: 1,
     nombre: "Ingeniero",
